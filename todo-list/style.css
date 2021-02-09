@@ -41,6 +41,10 @@
   /* background: black; */
 }
 
-.activ {
+.active {
   background: red;
+}
+
+.test {
+  font-size: 23px;
 }
