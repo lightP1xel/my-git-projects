@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: green;
+  min-width: 600px;
+  min-height: 300px;
+  padding: 40px;
+  border-radius: 70px;
+}
+
+.containerHeader {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.randomQuoteContainer {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+.authorContainer {
+  margin-bottom: 40px;
+  color: white;
+  font-size: 18px;
+}
+
+.createQuote {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: white;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+.createQuote:focus {
+  outline: none;
+  color: black;
+}
