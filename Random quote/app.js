@@ -6,7 +6,7 @@ async function getRandomQuote() {
   let response = await fetch('http://quotable.io/random')
   let result = await response.json()
   randomQuote.innerHTML = result.content
-  authorQuote.innerHTML = `Автор цитаты: ${result.author}`
+  authorQuote.innerHTML = `Author: ${result.author}`
 }
 
 generateBtn.addEventListener('click', getRandomQuote)

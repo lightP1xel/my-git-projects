@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Redressed', cursive;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -11,24 +13,29 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: #333;
 }
 
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  background: green;
+  background: #222227;
   min-width: 600px;
   min-height: 300px;
-  padding: 40px;
-  border-radius: 70px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .containerHeader {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 35px;
-  margin-bottom: 50px;
+  background: #233333;
+  width: 100%;
+  height: 100px;
+  color: white;
 }
 
 .randomQuoteContainer {
@@ -37,6 +44,10 @@ body {
   color: white;
   margin-bottom: 30px;
   max-width: 400px;
+  font-weight: 400;
+  width: 100%;
+
+  margin-top: 30px;
 }
 
 .authorContainer {
@@ -53,9 +64,16 @@ body {
   padding: 20px;
   border: 1px solid black;
   border-radius: 30px;
+  cursor: pointer;
+  transition: 1s;
+  margin-bottom: 20px;
+}
+
+.createQuote:hover {
+  background: white;
+  color: black;
 }
 
 .createQuote:focus {
   outline: none;
-  color: black;
 }
